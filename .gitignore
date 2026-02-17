@@ -1,0 +1,54 @@
+# ===== Python / venv =====
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.pytest_cache/
+.mypy_cache/
+
+# ===== OS / Editor =====
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ===== Node / React =====
+node_modules/
+dist/
+build/
+*.log
+
+# ===== Ultralytics / YOLO caches =====
+runs/
+wandb/
+*.pt
+*.onnx
+*.engine
+
+# Ultralytics settings/cache (Windows)
+%APPDATA%/Ultralytics/
+Ultralytics/
+
+# ===== App Outputs / Uploads =====
+uploads/
+jobs/
+outputs/
+*.mp4
+*.avi
+*.png
+*.jpg
+*.jpeg
+*.json
+
+# Keep only sample outputs if you want (optional)
+# !outputs/sample/**
+# !docs/screenshots/**
+
+# ===== Env files / secrets =====
+.env
+.env.*
+*.key
+*.pem
