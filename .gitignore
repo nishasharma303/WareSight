@@ -1,4 +1,6 @@
-# ===== Python / venv =====
+# =========================
+# Python / Backend
+# =========================
 .venv/
 venv/
 __pycache__/
@@ -9,30 +11,37 @@ __pycache__/
 .pytest_cache/
 .mypy_cache/
 
-# ===== OS / Editor =====
+# =========================
+# OS / Editor
+# =========================
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
 
-# ===== Node / React =====
+# =========================
+# Node (root-level only)
+# =========================
 node_modules/
 dist/
 build/
 *.log
 
-# ===== Ultralytics / YOLO caches =====
+# =========================
+# Ultralytics / YOLO
+# =========================
 runs/
 wandb/
-*.pt
-*.onnx
-*.engine
-
-# Ultralytics settings/cache (Windows)
-%APPDATA%/Ultralytics/
 Ultralytics/
+%APPDATA%/Ultralytics/
 
-# ===== App Outputs / Uploads =====
+# (Optional: keep model file if needed)
+# If you WANT yolov8n.pt tracked, comment next line
+# *.pt
+
+# =========================
+# App Outputs / Uploads
+# =========================
 uploads/
 jobs/
 outputs/
@@ -41,13 +50,10 @@ outputs/
 *.png
 *.jpg
 *.jpeg
-*.json
 
-# Keep only sample outputs if you want (optional)
-# !outputs/sample/**
-# !docs/screenshots/**
-
-# ===== Env files / secrets =====
+# =========================
+# Environment / Secrets
+# =========================
 .env
 .env.*
 *.key
