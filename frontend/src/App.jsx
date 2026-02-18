@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import axios from "axios";
 import "./App.css";
 
-const API = "http://localhost:8000";
+const API = import.meta.env.VITE_BACKEND_HTTP;
 
 export default function App() {
   const [file, setFile] = useState(null);
